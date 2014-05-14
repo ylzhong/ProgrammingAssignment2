@@ -1,12 +1,12 @@
-## The function will then get the value of the matrix,
-#set the value of its inverse , and get the value of its inverse. 
-#The function will return a list a functions that can be called )
+
 
 ## makeCacheMatrix: This function creates a special "matrix" object
 #that can cache its inverse.
 
 # makeCacheMatrix will take a matrix as a argument
-#(if no matrix is provided when the function is called then a matrix will be generated.
+#(if no matrix is provided when the function is called then a matrix will be #generated.The function will then get the value of the matrix,
+#set the value of its inverse , and get the value of its inverse. 
+#The function will return a list a functions that can be called )
 
 makeCacheMatrix <- function(x = matrix()) {
 
