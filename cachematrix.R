@@ -3,10 +3,12 @@
 ## makeCacheMatrix: This function creates a special "matrix" object
 #that can cache its inverse.
 
-# makeCacheMatrix will take a matrix as a argument
-#(if no matrix is provided when the function is called then a matrix will be #generated.The function will then get the value of the matrix,
-#set the value of its inverse , and get the value of its inverse. 
-#The function will return a list a functions that can be called )
+# makeCacheMatrix will take a matrix as a argument and if
+#ino matrix is provided when the function is called ,
+# a matrix will be generated.
+#The function will then gets the value of the matrix,
+#sets the value of its inverse , gets the value of its inverse. 
+#and, returns a list a functions that can be called )
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -46,7 +48,7 @@ cacheSolve <- function(x, ...) {
         # check if inverse of the matrix exists 
         #and if it dose, returns its value.
     }
-    # if inverse dose not exit, it will be calculated and returned.
+    # if inverse dose not exits, it will be calculated and returned.
     data <- x$get() 
     i <- solve(data,...)
     x$setinverse(i)
